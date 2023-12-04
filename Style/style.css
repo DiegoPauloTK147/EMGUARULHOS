@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap'); /*codigo da fonte Montserrat*/
+
+
+/*variaveis*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal:'Montserrat', sans-serif;
+    --cor-instagram: #9a0b89;
+    --cor-hover: #180344
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*zera as margens para incluir só quando necessário*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("/Images/IMG.png"); /*incerir imagem de fundo*/
+    background-repeat: no-repeat; /* não repetir a imagem de fundo*/
+    background-size: contain; /*pega toda area da class onde esta declarada*/
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+    margin-bottom: 1em; 
+}
+
+.container__botao:hover {
+    background-color: var(--cor-hover);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+
+}
+
+
+.container__botao__secundario {
+    background-color: var(--cor-instagram);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+
+
+
+
+}
+
+.container__botao__secundario:hover {
+    background-color: var(--cor-hover);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none; 
+    margin: 1em;
+
+
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+
+}
+
+.container__caixa {
+    margin: 0 9em;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile*/
+
+@media (max-width: 600px) {
+
+.body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("/Images/IMGm.png"); /*incerir imagem de fundo*/
+    background-repeat: no-repeat; /* não repetir a imagem de fundo*/
+    background-size: contain; /*pega toda area da class onde esta declarada*/
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: flex;
+
+    grid-template-columns: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    width: 95%;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+    margin: 1em;
+
+}
+
+.container__botao__secundario {
+    background-color: var(--cor-instagram);
+    border-radius: 5px;
+    padding: 1em;
+    width: 95%;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none; 
+    margin: 1em; 
+
+}
+
+.container__titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+.container__imagem {
+    margin: 0rem 0 1rem 0;
+
+}
+
+.container__caixa {
+    margin: 0 0;
+}
+
+}
