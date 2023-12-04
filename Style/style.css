@@ -121,7 +121,7 @@ body {
 
 /*mobile*/
 
-@media (max-width: 1.812px) {
+@media (max-width: 600px) {
 
 .body {
     background-color: var(--cor-de-fundo);
