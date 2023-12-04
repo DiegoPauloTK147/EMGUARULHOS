@@ -121,7 +121,7 @@ body {
 
 /*mobile*/
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
 .body {
     background-color: var(--cor-de-fundo);
@@ -135,14 +135,11 @@ body {
     background-image: url("/Images/IMGm.png"); /*incerir imagem de fundo*/
     background-repeat: no-repeat; /* não repetir a imagem de fundo*/
     background-size: contain; /*pega toda area da class onde esta declarada*/
-    align-items: center;
-    text-align: center;
+
 }
 .container {
     height: 100vh;
-    display: flex;
-
-    grid-template-columns: 100%;
+    display: block;
     align-items: center;
     text-align: center;
 
@@ -155,7 +152,7 @@ body {
     color: var(--branco-principal);
     display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
     text-decoration: none;
-    margin: 1em;
+    margin: 15em 0 0 0;
 
 }
 
@@ -167,23 +164,24 @@ body {
     color: var(--branco-principal);
     display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
     text-decoration: none; 
-    margin: 1em; 
+    margin: 2em 0 0 0; 
 
 }
 
 .container__titulo {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700;
+    margin: 2rem 1rem 0 1rem ;
 
 }
 
 .container__imagem {
-    margin: 0rem 0 1rem 0;
+width: 90%;
 
 }
 
 .container__caixa {
-    margin: 0 0;
+    margin: 0 0em;
 }
 
 }
