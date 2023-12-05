@@ -37,7 +37,9 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-column: 2;
+    grid-template-columns: [dados]50% [anuncio]50%;
+    margin: 2px 0 0 2rem;
 
 }
 
@@ -49,6 +51,28 @@ body {
     display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
     text-decoration: none;
     margin-bottom: 1em; 
+}
+
+.container__botao2 {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    width: 95%;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+    margin: 1em 0 0 0;
+
+}
+
+.container__botao2:hover {
+    background-color: var(--cor-hover);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+
 }
 
 .container__botao:hover {
@@ -69,7 +93,7 @@ body {
     color: var(--branco-principal);
     display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
     text-decoration: none;
-
+    margin-bottom: 1em; 
 
 
 
@@ -84,6 +108,20 @@ body {
     text-decoration: none; 
     margin: 1em;
 
+
+}
+
+.botao__voltar {
+    background-color: var(--cor-hover);
+    border-radius: 5px;
+    padding: 1em;
+    width: 5rem;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none; 
+    margin: 1em;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -112,6 +150,61 @@ body {
     background-color: #167bf7;
     width: 100%;
 }
+
+
+   h1{
+        text-align: center;
+        }
+    h2{
+            text-align: center;
+            color: green;
+            margin: 30px 0 0 0;
+            }
+        
+    table, th, td {
+        border: 1px solid black;
+        }
+        
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        }
+        
+    th, td{
+        padding: 10px;
+        text-align: center;
+        width: 250px;
+        }
+        
+    th{
+        font-weight: bold;
+        }
+        
+        
+    tr:nth-child(even) {
+        background-color: #333333;
+        }
+        
+    tr:hover:nth-child(1n + 2) {
+        background-color: #085F63;
+        color: #fff;
+        }
+
+.alinhar_tabela {
+    align-items:flex-start;
+}
+
+.coluna_2 {
+    columns:[anuncio];
+    margin: 2 0 0 2rem;
+    background-color: #c0c0c0;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
 
 
 
@@ -157,6 +250,18 @@ body {
     display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
     text-decoration: none;
     margin: 15em 0 0 0;
+
+}
+
+.container__botao2 {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    width: 95%;
+    color: var(--branco-principal);
+    display: block; /*PARA OCUPAR TODO O LOCAL ONDE A CLASS ESTA CHAMADA*/
+    text-decoration: none;
+    margin: 1em 0 0 0;
 
 }
 
