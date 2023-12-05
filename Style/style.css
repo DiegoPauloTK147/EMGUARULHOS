@@ -39,7 +39,7 @@ body {
     display: grid;
     grid-column: 2;
     grid-template-columns: [dados]50% [anuncio]50%;
-    margin: 2px 0 0 2rem;
+    margin: 2px 0rem 0 0rem;
 
 }
 
